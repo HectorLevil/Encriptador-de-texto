@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Encriptador-Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <header>
+        <img id="logo" src="imagenes/Vector.png">
+    </header>
+
+    <main>
+
+        <section>
+            <input class="entrada-texto" placeholder="Ingrese el texto aquí" type="text" required>
+
+            <div id="info-botones">
+                <img src="imagenes/!.png">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div id="caja-botones">
+                <button id="boton-1" onclick="btnEncriptar()">Encriptar</button>
+                <button id="boton-2" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="rectangulo">
+                <textarea id="mensaje" readonly cols="20" rows="20"></textarea>
+                <img src="imagenes/Muñeco.png" id="muneco">
+            </div>
+
+            <div id="info-rectangulo">
+                
+                <div id="info-rectangulo-1"> ¡Lo sentimos! <br>Ningún mensaje fue encontrado.</div>
+                <div id="info-rectangulo-2"> Ingresa el texto que desees encriptar o desencriptar.</div>
+            </div>
+            <button id="boton-3" onclick="copiar()">Copiar</button>
+            <button class="boton-4" onclick="btnLimpiar()">Limpiar</button>
+        </section>
+
+    </main>
+    <footer >
+        <div id="footer"> 
+            <h4 id="footer-text">Desarrollador por Héctor Levil Coñoepan</h4>
+            <a href="https://www.linkedin.com/in/h%C3%A9ctor-levil-co%C3%B1oepan?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3Bup9xC8t8SD2Hg4CqieIZJA%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile"><img id="footer-img" src="imagenes/linkedin.png"></a>
+        </div>
+       </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
